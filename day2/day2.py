@@ -43,7 +43,7 @@ with open('data.txt') as game_data:
         game_name = game_parts[0]
         game_subsets = game_parts[1].split(';')
 
-        total_sum_to_the_power = total_sum_to_the_power + sum_to_the_power(game_subsets)
+        total_sum_to_the_power += sum_to_the_power(game_subsets)
 
         if validate_game(game_name, game_subsets):
             possible_games_total += int(game_name.split(" ")[1])
